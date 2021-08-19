@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 80%;
+    background: black;
+    transition: all .5s ease-in-out;
+    top: 0;
+    z-index: -1;
+    transform: translateX(100%);
+    margin: 0 auto;
+}
+
+.menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.menu li a {
+    color: rgb(255, 0, 0);
+}
+
+#nav-bar label {
+    color: rgb(255, 0, 0);
+}
+
+#nav-bar input:checked~.menu {
+    transform: translateX(0);
+}
+
+#nav-bar input {
+    display: none;
+}
